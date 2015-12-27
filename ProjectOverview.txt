@@ -2,7 +2,7 @@ Gesture Library Project Overview
 
 Goal: 	
   Create a library and api that interprets movements of from the 
-  STM32VL Discovery Board 
+  STM32F4 Discovery Board 
 
 Features:
   1. Recognize following gestures in a 2D plane:
