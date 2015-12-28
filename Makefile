@@ -98,7 +98,7 @@ CFLAGS += -mfloat-abi=hard -mfpu=fpv4-sp-d16
 # tell ld which linker file to use
 # (this file is in the current directory)
 LFLAGS  = -Tstm32_flash.ld
-
+LFLAGS += -specs=nosys.specs
 
 ######################################################################
 #                         SETUP TARGETS                              #
