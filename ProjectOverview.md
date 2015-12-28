@@ -34,4 +34,7 @@ Design Overview:
   3. API
      a. Has functions to recognize combinations of shapes
      b. Allows user to configure settings
-     c. Allows user to create custom gestures 
+     c. Allows user to create custom gestures
+
+Notes:
+  1. Possble accelerometer library [here] (http://stm32f4-discovery.com/2014/09/library-35-lis302dl-or-lis3dsh-accelerometer/)
