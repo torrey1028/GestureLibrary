@@ -45,4 +45,5 @@
 
 <h2>Notes:</h2>
 
-  1. Possble accelerometer library [here] (http://stm32f4-discovery.com/2014/09/library-35-lis302dl-or-lis3dsh-accelerometer/)
+  1. Using accelerometer library [here] (http://stm32f4-discovery.com/2014/09/library-35-lis302dl-or-lis3dsh-accelerometer/)
+  2. Onboard accelerometer is LIS3DSH
