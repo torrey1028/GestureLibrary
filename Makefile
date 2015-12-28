@@ -20,6 +20,7 @@ STM_SRC = $(STM_DIR)/Libraries/STM32F4xx_StdPeriph_Driver/src
 # Tell make to look in that folder if it cannot find a source
 # in the current directory
 vpath %.c $(STM_SRC)
+vpath %.c drivers
 
 # My source file
 SRCS   = main.c
@@ -33,6 +34,14 @@ SRCS  += system_stm32f4xx.c
 # make finds them by searching the vpath defined above.
 SRCS  += stm32f4xx_rcc.c 
 SRCS  += stm32f4xx_gpio.c
+SRCS  += stm32f4xx_spi.c
+
+# Driver Sources
+SRCS += tm_stm32f4_delay.c
+SRCS += tm_stm32f4_disco.c
+SRCS += tm_stm32f4_lis302dl_lis3dsh.c
+SRCS += tm_stm32f4_gpio.c
+SRCS += tm_stm32f4_spi.c
 
 # Startup file written by ST
 # The assembly code in this file is the first one to be
