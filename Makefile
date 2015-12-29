@@ -21,6 +21,7 @@ STM_SRC = $(STM_DIR)/Libraries/STM32F4xx_StdPeriph_Driver/src
 # in the current directory
 vpath %.c $(STM_SRC)
 vpath %.c drivers
+vpath %.c lib
 
 # My source file
 SRCS   = main.c
@@ -37,11 +38,14 @@ SRCS  += stm32f4xx_gpio.c
 SRCS  += stm32f4xx_spi.c
 
 # Driver Sources
-SRCS += tm_stm32f4_delay.c
-SRCS += tm_stm32f4_disco.c
-SRCS += tm_stm32f4_lis302dl_lis3dsh.c
-SRCS += tm_stm32f4_gpio.c
-SRCS += tm_stm32f4_spi.c
+SRCS  += tm_stm32f4_delay.c
+SRCS  += tm_stm32f4_disco.c
+SRCS  += tm_stm32f4_lis302dl_lis3dsh.c
+SRCS  += tm_stm32f4_gpio.c
+SRCS  += tm_stm32f4_spi.c
+
+# Lib Sources
+SRCS  += gestures.c
 
 # Startup file written by ST
 # The assembly code in this file is the first one to be
@@ -54,6 +58,7 @@ INC_DIRS += $(STM_DIR)/Libraries/CMSIS/Include
 INC_DIRS += $(STM_DIR)/Libraries/CMSIS/ST/STM32F4xx/Include
 INC_DIRS += $(STM_DIR)/Libraries/STM32F4xx_StdPeriph_Driver/inc
 INC_DIRS += drivers
+INC_DIRS += lib
 INC_DIRS += .
 
 # in case we have to many sources and don't want 
