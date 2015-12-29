@@ -31,5 +31,6 @@
 /* Put your global defines for all libraries here used in your project */
 
 #define TM_DISCO_STM32F4_DISCOVERY
+#define DEBUG 1
 
 #endif
