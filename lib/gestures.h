@@ -24,7 +24,7 @@ typedef enum {
 	LEFT,
 	FORWARD,
 	BACK,
-	ERROR
+	BAD	
 } GESTURE_t;
 
 
@@ -40,7 +40,7 @@ void GESTURES_Init(void);
  * @param	None -- TODO: Add support for waiting for a gesture
  * @retval	GESTURE_t - current gesture
  */
-/*
+
 GESTURE_t GESTURES_GetGesture(void);
-*/
+
 #endif

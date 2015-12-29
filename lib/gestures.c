@@ -46,17 +46,17 @@ GESTURE_t GESTURES_GetGesture() {
 	
 	if (X > Y) {
 		if (Axes_Data.X > 0)
-			return FORWARD; 	
-		else
-			return BACK;
-	} else {
-		if (Axes_Data.Y > 0)
-			return LEFT;
+			return LEFT; 	
 		else
 			return RIGHT;
+	} else {
+		if (Axes_Data.Y > 0)
+			return BACK;
+		else
+			return FORWARD;
 	}	
 	
-	return ERROR;
+	return BAD;
 }
 
 /* Private */
