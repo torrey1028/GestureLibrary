@@ -18,14 +18,15 @@
 #include "tm_stm32f4_delay.h"
 #include "tm_stm32f4_lis302dl_lis3dsh.h"
 
-/*
+
 typedef enum {
 	RIGHT,
 	LEFT,
 	FORWARD,
-	BACK
+	BACK,
+	ERROR
 } GESTURE_t;
-*/
+
 
 /**
  * @brief	Runs accelerometer setup and LED setup
